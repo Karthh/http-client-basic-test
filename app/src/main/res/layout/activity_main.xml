@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/ActivityLayout"
+    android:clickable="true"
+    >
+
+
+    <ListView
+    android:orientation="vertical"
+    android:id="@+id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:gravity="bottom"
+        android:background="#161616"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button_layout"
+        >
+
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        android:text="Delete"
+        android:id="@+id/buttonDelete"
+        android:layout_centerInParent="true"
+        android:background="#303030"
+        android:textColor="#FFFFFF"
+        android:clickable="true"
+        />
+        <Button
+            android:layout_width="150dip"
+            android:layout_height="fill_parent"
+            android:text="Update"
+            android:id="@+id/buttonUpdate"
+            android:layout_toRightOf="@id/buttonDelete"
+            android:background="#303030"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
