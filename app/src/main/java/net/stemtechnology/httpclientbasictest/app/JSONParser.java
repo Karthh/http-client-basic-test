@@ -37,7 +37,7 @@ public class JSONParser implements JsonParserInterface {
                 int grade = person.getInt("grade");
                 String email = person.getString("email");
                 int id = person.getInt("id");
-                Student student = new Student(name, age, grade,id,email);
+                Student student = new Student(name, age, grade, id, email);
                 studentList.add(student);
             }
         } catch (Exception e) {
@@ -58,7 +58,7 @@ public class JSONParser implements JsonParserInterface {
                 int grade = person.getInt("grade");
                 String email = person.getString("email");
                 int id = person.getInt("id");
-                Student student = new Student(name, age,grade,id,email);
+                Student student = new Student(name, age, grade, id, email);
                 studentList.add(student);
             }
         } catch (Exception e) {
